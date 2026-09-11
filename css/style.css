@@ -1,0 +1,649 @@
+/* =========================================================
+   Ubuntu Community Care Centre
+   Part 2 - CSS Styling and Responsive Design
+   ========================================================= */
+
+
+/* =========================================================
+   1. CSS RESET
+   Provides consistent default styling across browsers.
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   2. BASE WEBSITE STYLES
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #183b2a;
+    background-color: #f8f5ed;
+}
+
+
+/* =========================================================
+   3. TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    color: #155d3a;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #155d3a;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   4. HEADER
+   ========================================================= */
+
+header {
+    background-color: #155d3a;
+    color: #ffffff;
+    padding: 1.25rem 5%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+
+/* =========================================================
+   5. NAVIGATION
+   Uses Flexbox for the desktop navigation layout.
+   ========================================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.2s ease;
+}
+
+
+/* =========================================================
+   6. NAVIGATION PSEUDO-CLASSES
+   ========================================================= */
+
+nav a:hover {
+    background-color: #d9a441;
+    color: #183b2a;
+    transform: translateY(-2px);
+}
+
+nav a:focus {
+    outline: 3px solid #d9a441;
+    outline-offset: 3px;
+}
+
+nav a:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   7. MAIN CONTENT
+   ========================================================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+main section {
+    margin-bottom: 2.5rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+
+/* =========================================================
+   8. HERO / INTRODUCTION
+   ========================================================= */
+
+.hero {
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(
+        rgba(21, 93, 58, 0.88),
+        rgba(24, 59, 42, 0.88)
+    );
+    color: #ffffff;
+    border-radius: 0.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero h1,
+.hero h2 {
+    color: #ffffff;
+}
+
+.hero p {
+    max-width: 750px;
+    font-size: 1.15rem;
+}
+
+
+/* =========================================================
+   9. CONTENT SECTIONS
+   ========================================================= */
+
+main section:not(.hero) {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+main section img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 0.6rem;
+}
+
+
+/* =========================================================
+   10. IMAGES
+   Responsive images prevent overflow on smaller screens.
+   ========================================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================================
+   11. LISTS
+   ========================================================= */
+
+ul,
+ol {
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* =========================================================
+   12. BUTTONS AND CALL-TO-ACTION LINKS
+   ========================================================= */
+
+button,
+input[type="submit"],
+input[type="button"],
+a.button,
+.btn {
+    display: inline-block;
+    background-color: #d9a441;
+    color: #183b2a;
+    border: 2px solid #d9a441;
+    padding: 0.75rem 1.4rem;
+    border-radius: 0.45rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+/* Button pseudo-classes */
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+a.button:hover,
+.btn:hover {
+    background-color: #155d3a;
+    color: #ffffff;
+    border-color: #155d3a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+a.button:focus,
+.btn:focus {
+    outline: 3px solid #d9a441;
+    outline-offset: 3px;
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+a.button:active,
+.btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   13. FORMS
+   ========================================================= */
+
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #183b2a;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #b7c4ba;
+    border-radius: 0.4rem;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+
+/* Form focus pseudo-class */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #155d3a;
+    box-shadow: 0 0 0 3px rgba(21, 93, 58, 0.18);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+
+/* =========================================================
+   14. SERVICE / CONTENT CARDS
+   Supports cards if classes are used in the HTML.
+   ========================================================= */
+
+.services,
+.service-container,
+.service-grid,
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.service,
+.service-card,
+.card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border: 1px solid #d8e1da;
+    border-radius: 0.7rem;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.service:hover,
+.service-card:hover,
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   15. CONTACT / LOCATION LAYOUT
+   Uses CSS Grid for multiple locations.
+   ========================================================= */
+
+.locations,
+.location-container,
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.location,
+.location-card {
+    background-color: #eef4ef;
+    padding: 1.5rem;
+    border-left: 5px solid #155d3a;
+    border-radius: 0.5rem;
+}
+
+
+/* =========================================================
+   16. FOOTER
+   ========================================================= */
+
+footer {
+    background-color: #183b2a;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 5%;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.4rem;
+}
+
+footer a {
+    color: #d9a441;
+}
+
+
+/* =========================================================
+   17. RESPONSIVE IMAGES
+   ========================================================= */
+
+figure {
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================================
+   18. TABLET RESPONSIVE DESIGN
+   Breakpoint: 1024px
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    main {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .services,
+    .service-container,
+    .service-grid,
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 360px;
+        padding: 3rem 1.5rem;
+    }
+}
+
+
+/* =========================================================
+   19. MOBILE RESPONSIVE DESIGN
+   Breakpoint: 768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    main {
+        width: 94%;
+        padding: 2rem 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    header {
+        padding: 1rem 4%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.3rem;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .hero {
+        min-height: 320px;
+        padding: 2.5rem 1.25rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .services,
+    .service-container,
+    .service-grid,
+    .cards,
+    .locations,
+    .location-container,
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main section img {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   20. SMALL MOBILE DEVICES
+   Breakpoint: 480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    main {
+        width: 95%;
+        padding: 1.5rem 0;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    section {
+        padding: 1.2rem;
+    }
+
+    .hero {
+        min-height: 280px;
+        padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    button,
+    input[type="submit"],
+    a.button,
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* =========================================================
+   SERVICES PAGE GRID
+   CSS Grid creates a clear multi-column desktop layout.
+   ========================================================= */
+
+.services-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* Keep the introduction section across the full width */
+.services-page > section:first-child {
+    grid-column: 1 / -1;
+}
+
+/* Style individual service cards */
+.services-page .service-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #d8e1da;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Service images */
+.services-page .service-card img {
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    object-fit: cover;
+    margin: 1rem auto;
+    border-radius: 0.6rem;
+}
+
+/* Service cards respond to smaller screens */
+@media (max-width: 768px) {
+
+    .services-page {
+        grid-template-columns: 1fr;
+    }
+
+    .services-page > section:first-child {
+        grid-column: auto;
+    }
+}
