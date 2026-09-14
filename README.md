@@ -137,7 +137,8 @@ The website was tested at different screen sizes using Chrome Developer Tools to
 - Images remain within their containers.
 - Service cards display in a two-column layout where appropriate.
 
-![Desktop responsive testing](screenshots/normalDesk.png)
+![alt text](screenshorts/normalDesk.png)
+
 
 ### Tablet Testing
 - Tested using an iPad Air viewport at approximately 820px × 1180px.
@@ -147,7 +148,7 @@ The website was tested at different screen sizes using Chrome Developer Tools to
 - Navigation remains accessible.
 - Service cards adjust to the available screen space.
 
-![Tablet responsive testing](screenshots/tablet.png)
+![alt text](screenshorts/tablet.png)
 
 ### Mobile Testing
 - Tested using an iPhone 12 Pro viewport at approximately 390px × 844px.
@@ -157,7 +158,7 @@ The website was tested at different screen sizes using Chrome Developer Tools to
 - Text remains readable.
 - No horizontal scrolling occurs.
 
-![Mobile responsive testing](screenshots/phone.png)
+![alt text](screenshorts/phone.png)
 
 ## Part 1 Feedback Corrections
 
