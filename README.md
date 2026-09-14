@@ -137,6 +137,8 @@ The website was tested at different screen sizes using Chrome Developer Tools to
 - Images remain within their containers.
 - Service cards display in a two-column layout where appropriate.
 
+![Desktop responsive testing](screenshots/normalDesk.png)
+
 ### Tablet Testing
 - Tested using an iPad Air viewport at approximately 820px × 1180px.
 - The website fits within the tablet screen without horizontal scrolling.
@@ -144,6 +146,8 @@ The website was tested at different screen sizes using Chrome Developer Tools to
 - Images remain contained within their sections.
 - Navigation remains accessible.
 - Service cards adjust to the available screen space.
+
+![Tablet responsive testing](screenshots/tablet.png)
 
 ### Mobile Testing
 - Tested using an iPhone 12 Pro viewport at approximately 390px × 844px.
@@ -153,4 +157,70 @@ The website was tested at different screen sizes using Chrome Developer Tools to
 - Text remains readable.
 - No horizontal scrolling occurs.
 
-Screenshots of the desktop, tablet and mobile tests are included as evidence of responsive design testing.
+![Mobile responsive testing](screenshots/phone.png)
+
+## Part 1 Feedback Corrections
+
+The following corrections were made based on the feedback received for Part 1:
+
+- Added a second responsive design proposal to address the requirement for two proposals.
+- Expanded the project timeline with more specific development milestones.
+- Added a README file containing project information, structure, technologies and documentation.
+- Corrected broken image references in the Services page.
+- Expanded the references section to provide more supporting sources.
+- Improved the website documentation and recorded changes in the changelog.
+
+## Part 2 Summary
+
+Part 2 focused on improving the visual design and responsiveness of the Ubuntu Community Care Centre website.
+
+The following improvements were implemented:
+
+- Added an external CSS stylesheet to all five HTML pages.
+- Added consistent colours, typography, spacing and layout styling.
+- Added hover, focus and active pseudo-classes.
+- Added a responsive two-column service-card layout for larger screens.
+- Added media queries for tablet and mobile screen sizes.
+- Added a responsive hamburger navigation menu for mobile devices.
+- Added responsive image handling using the HTML `<picture>` element.
+- Tested the website on desktop, tablet and mobile screen sizes.
+- Updated the GitHub repository using descriptive commits.
+
+## Changelog
+
+### Part 1
+
+- Created the five main website pages.
+- Added semantic HTML5 structure.
+- Added navigation between all pages.
+- Added forms and website content.
+- Added comments to the HTML code.
+- Created the initial GitHub repository.
+
+### Part 2
+
+- Fixed missing image references identified in the Part 1 feedback.
+- Added and updated the README documentation.
+- Added an external CSS stylesheet.
+- Added base styling, typography, colours, spacing and layout.
+- Added hover, focus and active pseudo-classes.
+- Added a responsive service-card grid.
+- Added tablet and mobile media queries.
+- Added a mobile hamburger navigation menu using JavaScript.
+- Added responsive `<picture>` elements to website images.
+- Tested the website at desktop, tablet and mobile screen sizes.
+
+## References
+
+- MDN Web Docs. CSS media queries. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries
+- MDN Web Docs. CSS Grid Layout. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+- MDN Web Docs. CSS pseudo-classes. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+- MDN Web Docs. Responsive images. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images
+- MDN Web Docs. HTML `<picture>` element. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture
+
+## Author
+
+**Student Name:** Liyabona Mangcengeza  
+**Student Number:** S10521132  
+**Module:** Web Development  
+**Module Code:** WEDE5020
