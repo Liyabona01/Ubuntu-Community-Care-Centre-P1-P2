@@ -191,25 +191,38 @@ The following improvements were implemented:
 
 ### Part 1
 
-- Created the five main website pages.
-- Added semantic HTML5 structure.
-- Added navigation between all pages.
-- Added forms and website content.
-- Added comments to the HTML code.
-- Created the initial GitHub repository.
+- Created the five main website pages: Home, About Us, Services, Enquiry and Contact Us.
+- Added semantic HTML5 structure and organised the content using appropriate headings and sections.
+- Added navigation links between all website pages.
+- Added enquiry and contact forms.
+- Added images with alternative text.
+- Added comments to the HTML code to improve code readability.
+- Created the initial GitHub repository and committed the Part 1 website files.
+
+### Part 1 Feedback Corrections
+
+- Corrected the broken image references on the Services page by replacing missing image files with images that are available in the project images folder.
+- Added a README.md file containing project information, technologies, website structure and documentation.
+- Expanded the project documentation to provide clearer information about the website goals, target audience and features.
+- Expanded the references section with additional technical sources.
+- Improved the project timeline and development milestones to make the development process more specific.
+- Addressed the requirement for two proposals by documenting the additional proposal required for the project.
 
 ### Part 2
 
-- Fixed missing image references identified in the Part 1 feedback.
-- Added and updated the README documentation.
-- Added an external CSS stylesheet.
-- Added base styling, typography, colours, spacing and layout.
-- Added hover, focus and active pseudo-classes.
-- Added a responsive service-card grid.
-- Added tablet and mobile media queries.
-- Added a mobile hamburger navigation menu using JavaScript.
-- Added responsive `<picture>` elements to website images.
-- Tested the website at desktop, tablet and mobile screen sizes.
+- Added an external `style.css` stylesheet and linked it to all five HTML pages.
+- Added base CSS styling including colours, spacing, margins, padding and box sizing.
+- Added typography styling for headings, paragraphs, navigation and form elements.
+- Added a structured layout using Flexbox and CSS Grid.
+- Added visual styling including backgrounds, borders, shadows, buttons and cards.
+- Added `:hover`, `:focus` and `:active` pseudo-classes for interactive elements.
+- Added responsive media queries for desktop, tablet and mobile screen sizes.
+- Created a responsive two-column service-card layout that changes to a single-column layout on smaller screens.
+- Added a responsive hamburger navigation menu for mobile devices using JavaScript.
+- Added responsive `<picture>` elements to the website images.
+- Tested the website using desktop, iPad Air and iPhone 12 Pro viewport sizes.
+- Added desktop, tablet and mobile responsive-testing screenshots to the README.
+- Updated GitHub using descriptive commits throughout the Part 2 development process.
 
 ## References
 
@@ -218,6 +231,7 @@ The following improvements were implemented:
 - MDN Web Docs. CSS pseudo-classes. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
 - MDN Web Docs. Responsive images. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images
 - MDN Web Docs. HTML `<picture>` element. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture
+- MDN Web Docs. JavaScript. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 ## Author
 
