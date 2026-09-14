@@ -2,8 +2,8 @@
 
 ## Student Information
 
-**Student Name:** Biamona Manzingeza  
-**Student Number:** S10...  
+**Student Name:** Liyabona Mangcengeza  
+**Student Number:** S10521132
 **Module:** Web Development  
 **Module Code:** WEDE5020  
 **Project:** Ubuntu Community Care Centre Website
@@ -123,8 +123,10 @@ Ubuntu-Community-Care-Centre/
     ├── equry.jpeg
     ├── indrx.jpeg
     └── location.jpeg
-
-    ## Responsive Design Testing
+    
+```
+    
+## Responsive Design Testing   
 
 The website was tested at different screen sizes using Chrome Developer Tools to ensure that the layout remains usable and readable across devices.
 
