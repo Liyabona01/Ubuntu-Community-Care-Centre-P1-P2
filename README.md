@@ -123,3 +123,32 @@ Ubuntu-Community-Care-Centre/
     ├── equry.jpeg
     ├── indrx.jpeg
     └── location.jpeg
+
+    ## Responsive Design Testing
+
+The website was tested at different screen sizes using Chrome Developer Tools to ensure that the layout remains usable and readable across devices.
+
+### Desktop Testing
+- Tested using a desktop screen.
+- Navigation displays horizontally.
+- Content is arranged clearly with appropriate spacing.
+- Images remain within their containers.
+- Service cards display in a two-column layout where appropriate.
+
+### Tablet Testing
+- Tested using an iPad Air viewport at approximately 820px × 1180px.
+- The website fits within the tablet screen without horizontal scrolling.
+- Text remains readable.
+- Images remain contained within their sections.
+- Navigation remains accessible.
+- Service cards adjust to the available screen space.
+
+### Mobile Testing
+- Tested using an iPhone 12 Pro viewport at approximately 390px × 844px.
+- Navigation changes to a hamburger menu.
+- Content changes to a single-column layout.
+- Images resize to fit the screen.
+- Text remains readable.
+- No horizontal scrolling occurs.
+
+Screenshots of the desktop, tablet and mobile tests are included as evidence of responsive design testing.
