@@ -84,6 +84,15 @@ The website includes:
 - Responsive design.
 - Interactive hover, focus and active states.
 - Responsive images.
+- Services FAQ accordion.
+- Service search and filtering functionality.
+- Image gallery with a lightbox feature on the About Us page.
+- Interactive map on the Contact Us page.
+- Responsive hamburger navigation menu.
+- Enquiry and contact form validation.
+- JavaScript form submission with user feedback.
+- Search engine optimisation (SEO) improvements.
+- Structured data for the organisation and its service area.
 
 ---
 
@@ -223,6 +232,33 @@ The following improvements were implemented:
 - Tested the website using desktop, iPad Air and iPhone 12 Pro viewport sizes.
 - Added desktop, tablet and mobile responsive-testing screenshots to the README.
 - Updated GitHub using descriptive commits throughout the Part 2 development process.
+
+### Part 2 Feedback Corrections
+
+- Removed the unnecessary `TYYU.index.html` file identified in the lecturer's feedback. This file contained an older version of the Home page and was not required because `index.html` is the active Home page.
+- Improved the responsive-image implementation by ensuring that smaller image files and original image files are provided through the `srcset` attribute.
+- Updated the Supporting Our Community image on `index.html` to include responsive image sources.
+- Updated the Food Assistance and Youth Development images on `services.html` to provide appropriate responsive image options.
+- Updated the enquiry introduction image on `enquiry.html` to use a smaller image source alongside the original image.
+- Updated the Our Locations image on `contact.html` to provide different image resolutions for responsive displays.
+- Corrected the Community Activities image alternative text on `services.html` so that it accurately describes the image.
+- Retained the existing responsive-image implementation on `about.html` because it already provided smaller and original image files.
+
+### Part 3
+
+- Added JavaScript functionality to improve website interactivity.
+- Added an FAQ accordion to the Services page.
+- Added service search and filtering functionality.
+- Added an image gallery with a lightbox feature to the About Us page.
+- Added an interactive map to the Contact Us page.
+- Improved the responsive hamburger navigation menu.
+- Added client-side validation and submission feedback to the Enquiry and Contact forms.
+- Added page-specific SEO metadata.
+- Added responsive image handling and lazy loading for supporting images.
+- Created and tested the robots.txt and sitemap.xml files.
+- Added structured data describing the organisation and its service area.
+- Tested website performance, accessibility, best practices and SEO using Lighthouse.
+
 
 ## References
 

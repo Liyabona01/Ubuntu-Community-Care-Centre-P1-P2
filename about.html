@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ubuntu Community Care Centre | About Us</title>
+    <!-- SEO Metadata -->
+    <title>About Us | Ubuntu Community Care Centre</title>
+
+    <meta name="description"
+          content="Learn about Ubuntu Community Care Centre, our mission, vision and commitment to supporting individuals, families and young people in Cape Town.">
+
+    <meta name="keywords"
+          content="about Ubuntu Community Care Centre, community organisation Cape Town, community development, community support, youth development">
+
+    <meta name="author" content="Ubuntu Community Care Centre">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -32,6 +42,80 @@
 
 </header>
 
+<!-- Community Image Gallery -->
+<section class="gallery-section">
+
+    <h2>Our Community Gallery</h2>
+
+    <p>Explore moments from our community and activities.</p>
+
+   
+    <div class="gallery-grid">
+
+    <button type="button" class="gallery-item">
+        <img src="images/gallery-food-support.jpeg"
+        loading="lazy"
+        srcset="images/gallery-food-support-small.png 414w,
+                     images/gallery-food-support.jpeg 828w"
+             sizes="(max-width: 768px) 100vw, 300px"
+             alt="Volunteers providing food support to community members">
+    </button>
+
+    <button type="button" class="gallery-item">
+        <img src="images/gallery-youth-learning.jpeg"
+         loading="lazy"
+             srcset="images/gallery-youth-learning-small.jpg 414w,
+                     images/gallery-youth-learning.jpeg 828w"
+             sizes="(max-width: 768px) 100vw, 300px"
+             alt="Young people participating in a learning programme">
+    </button>
+
+    <button type="button" class="gallery-item">
+        <img src="images/gallery-community-cleanup.jpeg"
+         loading="lazy"
+             srcset="images/gallery-community-cleanup-small.jpg 414w,
+                     images/gallery-community-cleanup.jpeg 828w"
+             sizes="(max-width: 768px) 100vw, 300px"
+             alt="Volunteers taking part in a community clean-up">
+    </button>
+
+    <button type="button" class="gallery-item">
+        <img src="images/gallery-food-donations.jpeg"
+         loading="lazy"
+             srcset="images/gallery-food-donations-small.jpg 414w,
+                     images/gallery-food-donations.jpeg 828w"
+             sizes="(max-width: 768px) 100vw, 300px"
+             alt="Food donations prepared for community support">
+    </button>
+
+    <button type="button" class="gallery-item">
+        <img src="images/gallery-community-gathering.jpeg"
+         loading="lazy"
+             srcset="images/gallery-community-gathering-small.jpg 414w,
+                     images/gallery-community-gathering.jpeg 828w"
+             sizes="(max-width: 768px) 100vw, 300px"
+             alt="Community members gathering for a shared activity">
+    </button>
+
+</div>
+</section>
+
+<!-- Image Lightbox -->
+<dialog id="image-lightbox" class="lightbox">
+
+    <button
+        type="button"
+        class="lightbox-close"
+        aria-label="Close enlarged image">
+        &times;
+    </button>
+
+    <img id="lightbox-image" src="" alt="">
+
+    <p id="lightbox-caption"></p>
+
+</dialog>
+
     <!-- Main content of the About Us page -->
     <main>
 
@@ -48,11 +132,15 @@
                 activities and develop skills.
             </p>
 
-      <picture>
-    <source media="(max-width: 768px)" srcset="images/about.jpeg">
-    <img src="images/about.jpeg"
-         alt="Ubuntu Community Care Centre building">
-</picture>
+      <picture>   
+<img
+    src="images/about.jpeg"
+    loading="lazy"
+    srcset="images/about-small.jpg 414w,
+            images/about.jpeg 828w"
+    sizes="(max-width: 768px) 100vw, 600px"
+    alt="Community members joining hands around a heart">
+       </picture>
 
         </section>
 
@@ -88,17 +176,23 @@
 
             <h2>Our Community</h2>
 
-            <p>
-                Ubuntu Community Care Centre believes that positive change
-                happens when people work together. Volunteers, community
-                members and supporters all contribute towards creating a
-                caring and supportive environment.
-            </p>
+           <p>
+    Ubuntu Community Care Centre believes that positive change
+    happens when people work together. Volunteers, community
+    members and supporters all contribute towards creating a
+    caring and supportive environment.
+    You can explore <a href="services.html">our services</a>
+    or <a href="contact.html">contact us</a> to learn more.
+</p>
 
-          <picture>
-    <source media="(max-width: 768px)" srcset="images/about.jpeg">
-    <img src="images/about.jpeg"
-         alt="Ubuntu Community Care Centre building">
+          <picture>       
+<img
+    src="images/about.jpeg"
+    loading="lazy"
+    srcset="images/about-small.jpg 414w,
+            images/about.jpeg 828w"
+    sizes="(max-width: 768px) 100vw, 600px"
+    alt="Community members joining hands around a heart">
 </picture>
 
         </section>

@@ -5,8 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ubuntu Community Care Centre | Home</title>
+    <!-- SEO Metadata -->
+    <title>Ubuntu Community Care Centre | Community Support in Cape Town</title>
+
+    <meta name="description"
+          content="Discover Ubuntu Community Care Centre in Cape Town. Explore community support, food assistance, volunteering and youth development programmes.">
+
+    <meta name="keywords"
+          content="Ubuntu Community Care Centre, community support Cape Town, food assistance, volunteering, youth development, community programmes">
+
+    <meta name="author" content="Ubuntu Community Care Centre">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ubuntu Community Care Centre",
+  "areaServed": {
+    "@type": "City",
+    "name": "Cape Town"
+  },
+  "description": "A community care centre supporting and serving the local community in Cape Town."
+}
+</script>
 </head>
 
 <body>
@@ -51,9 +74,15 @@
             </p>
 
            <picture>
-    <source media="(max-width: 768px)" srcset="images/indrx.jpeg">
-    <img src="images/indrx.jpeg"
-         alt="Community members standing together">
+   
+<img
+    src="images/indrx.jpeg"
+     loading="lazy"
+    srcset="images/indrx-small.jpg 414w,
+            images/indrx.jpeg 828w"
+    sizes="(max-width: 768px) 100vw, 600px"
+    alt="Ubuntu community members standing together">
+
 </picture>
 
         </section>
@@ -70,11 +99,17 @@
                 through community support and development activities.
             </p>
 
-      <picture>
-    <source media="(max-width: 768px)" srcset="images/donation.jpeg">
-    <img src="images/donation.jpeg"
-         alt="Community members supporting one another">
+ 
+<picture>
+    <img
+        src="images/donation.jpeg"
+        loading="lazy"
+        srcset="images/donation-small.jpg 414w,
+                images/donation.jpeg 828w"
+        sizes="(max-width: 768px) 100vw, 600px"
+        alt="Community members supporting one another through donations">
 </picture>
+
 
         </section>
 
@@ -89,7 +124,8 @@
                 make an enquiry or contact us for more information.
             </p>
 
-            <a href="enquiry.html">Make an Enquiry</a>
+            <a href="services.html">Explore Our Services</a>
+<a href="enquiry.html">Make an Enquiry</a>
 
         </section>
 

@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ubuntu Community Care Centre | Enquiry</title>
+    <!-- SEO Metadata -->
+    <title>Make an Enquiry | Ubuntu Community Care Centre</title>
+
+    <meta name="description"
+          content="Contact Ubuntu Community Care Centre to enquire about volunteering, sponsorship opportunities and community programmes in Cape Town.">
+
+    <meta name="keywords"
+          content="community enquiry Cape Town, volunteer opportunities, community sponsorship, community programmes, Ubuntu Community Care Centre">
+
+    <meta name="author" content="Ubuntu Community Care Centre">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -41,18 +51,20 @@
 
             <h2>Get Involved</h2>
 
-           <picture>
-            <source media="(max-width: 768px)" srcset="images/enqury.jpeg">
-            <img src="images/enqury.jpeg"
-             alt="People getting involved in community activities">
-            </picture>
-
-            <p>
-                There are many ways to support Ubuntu Community Care Centre.
-                You can volunteer your time, become a sponsor or support
-                one of our community programmes.
-            </p>
-
+<picture>
+    <img
+        src="images/enqury.jpeg"
+        srcset="images/enqury-small.jpg 414w,
+                images/enqury.jpeg 828w"
+        sizes="(max-width: 768px) 100vw, 600px"
+        alt="People getting involved in community activities">
+</picture>
+          <p>
+    Volunteers play an important role in supporting our
+    community activities and programmes. If you would like
+    to volunteer, complete the <a href="#enquiry-form">enquiry form below</a>
+    and select the volunteer option.
+</p>
         </section>
 
         <!-- Volunteer section -->
@@ -75,11 +87,11 @@
             <h2>Become a Sponsor</h2>
 
             <p>
-                Sponsors can help Ubuntu Community Care Centre provide
-                resources and continue supporting community programmes.
-                Organisations and individuals interested in becoming
-                sponsors are welcome to contact us.
-            </p>
+    Sponsors can help Ubuntu Community Care Centre provide
+    resources and continue supporting community programmes.
+    Organisations and individuals interested in becoming
+    sponsors are welcome to <a href="contact.html">contact us</a>.
+</p>
 
         </section>
 
@@ -88,71 +100,60 @@
 
             <h2>Enquiry Form</h2>
 
-            <form>
+           <form id="enquiry-form">
 
-                <!-- Full name -->
-                <label for="name">Full Name:</label>
-                <br>
+    <label for="name">Full Name:</label>
+    <br>
+    <input type="text" id="name" name="name"
+           minlength="2" maxlength="60"
+           autocomplete="name" required>
 
-                <input type="text" id="name" name="name" required>
+    <br><br>
 
-                <br><br>
+    <label for="email">Email Address:</label>
+    <br>
+    <input type="email" id="email" name="email"
+           autocomplete="email" required>
 
-                <!-- Email address -->
-                <label for="email">Email Address:</label>
-                <br>
+    <br><br>
 
-                <input type="email" id="email" name="email" required>
+    <label for="phone">Contact Number:</label>
+    <br>
+    <input type="tel" id="phone" name="phone"
+           pattern="(0[0-9]{9}|\+27[0-9]{9})"
+           title="Enter a South African number such as 0821234567 or +27821234567."
+           maxlength="12" autocomplete="tel" required>
 
-                <br><br>
+    <br><br>
 
-                <!-- Contact number -->
-                <label for="phone">Contact Number:</label>
-                <br>
+    <label for="enquiry-type">Type of Enquiry:</label>
+    <br>
+    <select id="enquiry-type" name="enquiry-type" required>
+        <option value="" selected disabled>Select an enquiry type</option>
+        <option value="volunteer">Volunteer</option>
+        <option value="sponsor">Become a Sponsor</option>
+        <option value="programme">Community Programme</option>
+        <option value="other">Other</option>
+    </select>
 
-                <input type="tel" id="phone" name="phone">
+    <br><br>
 
-                <br><br>
+    <label for="message">Your Message:</label>
+    <br>
+    <textarea id="message" name="message"
+              rows="6" cols="40"
+              minlength="10" maxlength="1000"
+              placeholder="Enter your enquiry here"
+              required></textarea>
 
-                <!-- Enquiry type -->
-                <label for="enquiry-type">Type of Enquiry:</label>
-                <br>
+    <br><br>
 
-                <select id="enquiry-type" name="enquiry-type">
+    <button type="submit">Submit Enquiry</button>
 
-                    <option value="volunteer">Volunteer</option>
+    <p id="enquiry-feedback" class="form-feedback"
+       role="status" aria-live="polite"></p>
 
-                    <option value="sponsor">
-                        Become a Sponsor
-                    </option>
-
-                    <option value="programme">
-                        Community Programme
-                    </option>
-
-                    <option value="other">Other</option>
-
-                </select>
-
-                <br><br>
-
-                <!-- Message -->
-                <label for="message">Your Message:</label>
-                <br>
-
-                <textarea id="message"
-                          name="message"
-                          rows="6"
-                          cols="40"
-                          placeholder="Enter your enquiry here"></textarea>
-
-                <br><br>
-
-                <!-- Submit button -->
-                <button type="submit">Submit Enquiry</button>
-
-            </form>
-
+</form>
         </section>
 
     </main>

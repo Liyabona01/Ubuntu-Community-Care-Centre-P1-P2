@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ubuntu Community Care Centre | Services</title>
+    <!-- SEO Metadata -->
+    <title>Our Services | Ubuntu Community Care Centre</title>
+
+    <meta name="description"
+          content="Explore food assistance, clothing support, youth development and community activities offered by Ubuntu Community Care Centre in Cape Town.">
+
+    <meta name="keywords"
+          content="community services Cape Town, food assistance, clothing support, youth development, community activities, Ubuntu Community Care Centre">
+
+    <meta name="author" content="Ubuntu Community Care Centre">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,28 +41,99 @@
     </nav>
 
 </header>
-    <!-- Main content of the Services page -->
-     <main class="services-page">
+<!-- Frequently Asked Questions -->
+<section class="faq-section">
 
-        <section>
+    <h2>Frequently Asked Questions</h2>
 
-            <h2>Our Services</h2>
+    <div class="accordion-item">
 
+        <button class="accordion-button" aria-expanded="false">
+            Who can receive support?
+        </button>
+
+        <div class="accordion-content" hidden>
             <p>
-                Ubuntu Community Care Centre offers different forms of
-                support and community activities aimed at improving the
-                well-being and development of people in the community.
+                Individuals and families in the community who need
+                assistance can enquire about the support programmes
+                offered by the centre.
             </p>
+        </div>
 
-        </section>
+    </div>
+
+    <div class="accordion-item">
+
+        <button class="accordion-button" aria-expanded="false">
+            How can I become a volunteer?
+        </button>
+
+        <div class="accordion-content" hidden>
+        
+            <p>
+    You can visit our <a href="enquiry.html">Enquiry page</a>
+    and submit a volunteer enquiry using the enquiry form.
+ 
+</p>
+        </div>
+
+    </div>
+
+    <div class="accordion-item">
+
+        <button class="accordion-button" aria-expanded="false">
+            How can I support the organisation?
+        </button>
+
+        <div class="accordion-content" hidden>
+            <p>
+    You can support the centre by volunteering,
+    becoming a sponsor or <a href="enquiry.html">making an enquiry</a>
+    about our programmes.
+</p>
+        </div>
+
+    </div>
+
+<section class="services-intro">
+
+    <h2>Our Services</h2>
+
+    <p>
+        Ubuntu Community Care Centre offers different forms of
+        support and community activities aimed at improving the
+        well-being and development of people in the community.
+    </p>
+
+    <!-- Service Search -->
+    <div class="service-search">
+        <label for="service-search">Search for a service:</label>
+
+        <input
+            type="search"
+            id="service-search"
+            placeholder="Search food, clothing, youth..."
+            aria-label="Search available services">
+
+        <p id="search-message" aria-live="polite"></p>
+    </div>
+
+</section>
 
         <!-- Food assistance service -->
          <section class="service-card">
 
             <h2>Food Assistance</h2>
 
-            <img src="images/donation.jpeg"
-     alt="Community members receiving support">
+   <picture>
+    <img
+        src="images/donation.jpeg"
+         loading="lazy"
+        srcset="images/donation-small.jpg 414w,
+                images/donation.jpeg 828w"
+        sizes="(max-width: 768px) 100vw, 600px"
+        alt="Community members receiving support">
+</picture>
             <p>
                 Our food assistance programme supports individuals and
                 families who may need additional help with basic food
@@ -69,9 +150,14 @@
             <h2>Clothing Support</h2>
             
             <picture>
-                 <source media="(max-width: 768px)" srcset="images/donation.jpeg">
-                 <img src="images/donation.jpeg"
-                  alt="Community members receiving support">
+<img
+    src="images/donation.jpeg"
+     loading="lazy"
+    srcset="images/donation-small.jpg 414w,
+            images/donation.jpeg 828w"
+    sizes="(max-width: 768px) 100vw, 600px"
+    alt="Community members participating in activities together">
+
                 </picture>
             <p>
                 Clothing support provides suitable clothing and other
@@ -86,10 +172,14 @@
 
             <h2>Youth Development</h2>
 
-           <picture>
-    <source media="(max-width: 768px)" srcset="images/about.jpeg">
-    <img src="images/about.jpeg"
-         alt="Community members participating in a community support programme">
+<picture>
+    <img
+        src="images/about.jpeg"
+         loading="lazy"
+        srcset="images/about-small.jpg 414w,
+                images/about.jpeg 828w"
+        sizes="(max-width: 768px) 100vw, 600px"
+        alt="Community members participating in a community support programme">
 </picture>
             <p>
                 Youth development activities encourage young people to
@@ -104,10 +194,14 @@
 
             <h2>Community Activities</h2>
 
-          <picture>
-    <source media="(max-width: 768px)" srcset="images/location.jpeg">
-    <img src="images/location.jpeg"
-         alt="Community members participating in a community activity">
+          <picture>            
+<img
+    src="images/donation.jpeg"
+     loading="lazy"
+    srcset="images/donation-small.jpg 414w,
+            images/donation.jpeg 828w"
+    sizes="(max-width: 768px) 100vw, 600px"
+    alt="Community members participating in activities together">
 </picture>
 
             <p>
